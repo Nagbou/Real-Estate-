@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+
 const listingSchema = new mongoose.Schema(
   {
     name: {
@@ -56,5 +57,7 @@ const listingSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
 const Listing = mongoose.model('Listing', listingSchema);
+
 export default Listing;

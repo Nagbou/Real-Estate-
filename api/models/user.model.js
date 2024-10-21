@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema(
   {
@@ -17,12 +17,13 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
     avatar:{
-      type:String,
-      default:"https://th.bing.com/th/id/R.19fa7497013a87bd77f7adb96beaf768?rik=144XvMigWWj2bw&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f5%2fUser-Profile-PNG-High-Quality-Image.png&ehk=%2bat%2brmqQuJrWL609bAlrUPYgzj%2b%2f7L1ErXRTN6ZyxR0%3d&risl=&pid=ImgRaw&r=0"
+      type: String,
+      default: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     },
   },
   { timestamps: true }
-); // will automatically add 2 infos (time of creation and time of last update)
+);
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model('User', userSchema);
+
 export default User;
