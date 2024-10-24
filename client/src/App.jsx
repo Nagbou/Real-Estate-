@@ -18,6 +18,7 @@ export default function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/About" element={<About />} />
+        <Route path='/search' element={<Search />} />
         <Route path="/listing/:listingId" element={<Listing />} />
         <Route element={<PrivateRoute />}>
           <Route path="/profile" element={<Profile />} />
