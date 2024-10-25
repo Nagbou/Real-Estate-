@@ -27,6 +27,8 @@ export default function LandingImage() {
 
   return (
     <div className={styles.container} id="landing_img">
+       <img src="/imgs/bg-1.jpg" alt="Background" className={styles.backgroundImage} />
+     
       <div className={styles.navbarElementsContainer}>
         <Link to="/About">
           <h5 className={`${styles.navbarElement} me-5`}>About</h5>
