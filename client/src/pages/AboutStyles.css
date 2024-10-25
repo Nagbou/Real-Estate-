@@ -1,0 +1,91 @@
+.vertical_yellow_box {
+    border-left: #FFD700 8px solid;
+    padding-left: 1%;
+}
+
+.vertical_white_box {
+    border-left: white 8px solid;
+    padding-left: 2%;
+}
+
+.about_header {
+    background-color: #1A1A2E;
+    color: white;
+    padding: 1.5% 0 1.5% 3%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about_section {
+    margin: 8% 0 0 5%;
+}
+
+
+.about_section_header,
+.beliefs_section_header,
+.leaders_section_header {
+    color: #0F4C5C;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.about_section_para,
+.beliefs_section_para,
+.leaders_section_para {
+    color: #1A1A2E;
+    font-size: larger;
+    width: 60%;
+    display: inline-block;
+}
+
+.beliefs_section_para {
+    width: 100%;
+}
+
+.beliefs_section_header {
+    margin-top: 8%;
+}
+
+.img_beliefs {
+    margin: 0 2% 0 4%;
+}
+
+.beliefs_section,
+.leaders_section {
+    margin: 8% 0 0 0;
+}
+
+.leaders_section {
+    margin: 8% 0 0 8%;
+}
+
+.leaders_section_header {
+    margin-top: 25%;
+}
+
+.leaders_section_para {
+    width: 100%;
+}
+
+.img_solo {
+    padding: 35% 0 0 0;
+}
+
+.img_leaders {
+    margin-bottom: 8%;
+}
+
+.counter_section {
+    background-color: #0F4C5C;
+    color: white;
+    margin-top: 8%;
+    padding: 5% 5% 3% 5%;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.counter {
+    display: inline-block;
+    margin-left: 20%;
+    text-align: center;
+}

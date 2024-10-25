@@ -1,0 +1,52 @@
+.contact_section {
+    margin: 10% 0 0 0;
+}
+
+.contact_section_header {
+    font-size: 2rem;
+    color: #0F4C5C;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.contact_section_body {
+    background-color: #0F4C5C;
+    padding: 5% 3% 5% 7%;
+    width: 100%;
+}
+
+.infos {
+    margin-top: 3%;
+}
+
+.contact_infos {
+    color: white;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-size: x-large;
+}
+
+.map:hover {
+    cursor: pointer;
+}
+
+.map_img {
+    height: 250px;
+    width: 500px;
+}
+
+.map_text {
+    color: white;
+    margin-top: 2%;
+    font-size: x-large;
+}
+
+.vertical_yellow_box {
+    border-left: #FFD700 8px solid;
+    padding-left: 1%;
+}
+
+.vertical_white_box {
+    border-left: white 8px solid;
+    padding-left: 2%;
+}

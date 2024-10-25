@@ -1,0 +1,60 @@
+.about_section {
+    margin: 8% 0 0 5%;
+}
+
+.vertical_yellow_box,
+.vertical_white_box {
+    border-left: 8px solid;
+    padding-left: 2%;
+}
+
+.vertical_yellow_box {
+    border-color: #FFD700; /* Use color only for vertical yellow box */
+}
+
+.vertical_white_box {
+    border-color: white; /* Use color only for vertical white box */
+}
+
+.about_section_header {
+    color: #0F4C5C;
+    font-size: 2rem;
+}
+
+.about_section_para {
+    color: #1A1A2E;
+    width: 90%;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.img_about {
+    margin-left: 10%;
+    width: 100%;
+    transition: filter 0.3s ease;
+    filter: brightness(70%);
+}
+
+.view_more {
+    position: relative;
+    bottom: 50%;
+    left: 40%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 2% 5%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.learn_more:hover .img_about {
+    filter: brightness(40%);
+}
+
+.view_more:hover {
+    background-color: white;
+    color: #0F4C5C;
+}

@@ -10,16 +10,17 @@ import CreateListing from "./pages/CreateListing";
 import UpdateListing from "./pages/UpdateListing";
 import Listing from "./pages//Listing";
 import Search from "./pages/Search";
+import ContactSection from "./components/ContactSection";
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/About" element={<About />} />
-        <Route path='/search' element={<Search />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/listing/:listingId" element={<Listing />} />
         <Route element={<PrivateRoute />}>
           <Route path="/profile" element={<Profile />} />
@@ -30,6 +31,7 @@ export default function App() {
           />
         </Route>
       </Routes>
+      
     </BrowserRouter>
   );
 }
