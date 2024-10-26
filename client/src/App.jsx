@@ -1,21 +1,24 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
-import Header from "./components/Header";
 import PrivateRoute from "./components/PrivateRoute";
 import CreateListing from "./pages/CreateListing";
 import UpdateListing from "./pages/UpdateListing";
-import Listing from "./pages//Listing";
+import Listing from "./pages/Listing";
 import Search from "./pages/Search";
-import ContactSection from "./components/ContactSection";
 import Contact from "./pages/Contact";
+import HomeBtn from "./components/HomeBtn";
+import SearchBtn from "./components/SearchBtn";
+
 export default function App() {
   return (
     <BrowserRouter>
-      {/* <Header /> */}
+      <HomeBtn />
+      <SearchBtn />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
@@ -33,7 +36,6 @@ export default function App() {
           />
         </Route>
       </Routes>
-
     </BrowserRouter>
   );
 }
