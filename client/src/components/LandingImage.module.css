@@ -1,18 +1,18 @@
 .container {
-  position: relative; /* Maintain relative positioning for child elements */
+  position: relative;
   width: 100%;
   height: 650px;
-  overflow: hidden; /* Ensure content doesn't overflow */
+  overflow: hidden;
 }
 
 .backgroundImage {
-  position: absolute; /* Position the image absolutely */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Make it cover full width */
-  height: 100%; /* Make it cover full height */
-  object-fit: cover; /* Ensure the image covers the entire area */
-  z-index: -1; /* Set the z-index to send it to the back */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 

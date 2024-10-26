@@ -1,0 +1,50 @@
+.verticalYellowBox {
+    border-left: 8px solid #FFD700;
+    padding-left: 1%;
+  }
+
+  .verticalWhiteBox {
+    border-left: 8px solid white;
+    padding-left: 2%;
+  }
+
+  .contactInputSectionPara {
+    width: 80%;
+    padding-left: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+  }
+
+  .inputBox {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top: 5%;
+    outline: none;
+  }
+
+  .inputBox:focus {
+    border-bottom: 1px solid white;
+  }
+
+  .submitBtn {
+    background-color: #1A1A2E;
+    color: white;
+    margin-top: 8%;
+    padding: 0.5% 5%;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .submitBtn:hover {
+    background-color: white;
+    color: #1A1A2E;
+  }
+
+  .contactInfos {
+    color: white;
+    font-size: x-large;
+    margin-top: 5%;
+  }
