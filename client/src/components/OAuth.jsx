@@ -28,10 +28,10 @@ export default function OAuth() {
         }),
       });
 
-      const data = await res.json();  // Properly await the JSON response
+      const data = await res.json(); // Properly await the JSON response
       if (res.ok) {
-        dispatch(signInSuccess(data));  // Dispatch success
-        navigate("/");  // Redirect after successful login
+        dispatch(signInSuccess(data)); // Dispatch success
+        navigate("/"); // Redirect after successful login
       } else {
         console.error("Error signing in with Google", data.message);
       }
@@ -44,7 +44,7 @@ export default function OAuth() {
     <button
       onClick={handleGoogleClick}
       type="button"
-      className="bg-red-700 text-white p-3 rounded-lg uppercase hover:opacity-95"
+      className="bg-[#df2b2b] text-white p-3 text-lg font-bold text-center border-none rounded-2xl outline-none mt-4 cursor-pointer transition-colors duration-300 hover:bg-white hover:text-[#df2b2b] w-full"
     >
       Continue with Google
     </button>

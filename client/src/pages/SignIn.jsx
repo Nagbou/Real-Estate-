@@ -1,23 +1,23 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  signInStart,
-  signInSuccess,
-  signInFailure,
-} from "../redux/user/userSlice";
+import { signInStart, signInSuccess, signInFailure } from "../redux/user/userSlice";
 import OAuth from "../components/OAuth";
+import "./SignIn.css"; // Import the external CSS file
+
 export default function Signin() {
   const [formData, setFormData] = useState({});
   const { loading, error } = useSelector((state) => state.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.id]: e.target.value,
     });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -30,7 +30,6 @@ export default function Signin() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
-      console.log(data);
       if (data.success === false) {
         dispatch(signInFailure(data.message));
         return;
@@ -41,37 +40,51 @@ export default function Signin() {
       dispatch(signInFailure(error.message));
     }
   };
-  console.log(formData);
+
   return (
-    <div className="p-3 max-w-lg mx-auto">
-      <h1 className="text-3xl text-center font-bold my-7">Sign In</h1>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <input
-          type="email"
-          placeholder="email"
-          className="border p-3 rounded-lg"
-          id="email"
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          placeholder="password"
-          className="border p-3 rounded-lg"
-          id="password"
-          onChange={handleChange}
-        />
-        <button className="bg-slate-700 text-white p-3 rounded-lg upercase hover:opacity-95 disabled: opacity-80">
-          {loading ? "Loading..." : "Sign In"}
-        </button>
+    <div className="signin-container">
+      <div className="signin-box">
+        <h1 className="signin-header">Welcome Back! 🎉</h1>
+        <form onSubmit={handleSubmit} className="signin-form">
+          <input
+            type="email"
+            className="signin-input"
+            placeholder="Your e-mail"
+            id="email"
+            onChange={handleChange}
+          />
+          <input
+            type="password"
+            className="signin-input mb-3"
+            placeholder="Your password"
+            id="password"
+            onChange={handleChange}
+          />
+          <div className="signin-links">
+            <small
+              className="signin-link"
+              onClick={() => navigate("/forgot-password")}
+            >
+              Forget password?
+            </small>
+            <small
+              className="signin-link ms-4"
+              onClick={() => navigate("/signup")}
+            >
+              Create an account?
+            </small>
+          </div>
+          <button
+            className="signin-button"
+            id="submit_btn"
+            disabled={loading}
+          >
+            {loading ? "Loading..." : "Log In"}
+          </button>
+        </form>
         <OAuth />
-      </form>
-      <div className="flex gap-2 mt-5">
-        <p>Dont have an account ?</p>
-        <Link to={"/SignUp"}>
-          <span className="text-blue-700">Create an account</span>
-        </Link>
+        {error && <p className="error-message">{error}</p>}
       </div>
-      {error && <p className="text-red-500 mt-5">{error}</p>}
     </div>
   );
 }
