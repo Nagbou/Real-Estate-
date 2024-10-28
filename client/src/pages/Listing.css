@@ -1,0 +1,36 @@
+.image-container img {
+    border-radius: 8px;
+}
+
+.vertical_yellow_box {
+    border-left: #FFD700 8px solid;
+    padding-left: 1.5%;
+}
+
+.vertical_white_box {
+    border-left: white 8px solid;
+    padding-left: 2%;
+}
+
+.describ {
+    margin: 10% 0 1% 5%;
+    color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.details_section_body {
+    padding: 3% 3% 3% 0%;
+    width: 100%;
+}
+
+.details_infos {
+    display: inline-block;
+    color: white;
+    margin-bottom: 3%;
+    margin-left: 0%;
+    padding-left: 5%;
+    font-size: x-large;
+    font-weight: bold;
+}
