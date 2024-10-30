@@ -1,0 +1,14 @@
+
+.vertical_yellow_box {
+    border-left: #FFD700 8px solid;
+    padding-left: 2.5%;
+}
+
+.vertical_white_box {
+    border-left: white 8px solid;
+    padding-left: 2%;
+}
+.vertical_blue_box {
+    border-left: #0F4C5C 8px solid;
+    padding-left: 2.5%;
+}
